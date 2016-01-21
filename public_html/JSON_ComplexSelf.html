@@ -27,14 +27,23 @@ hobby with a description.
             var meObject = {
                 "Name":"Mike",
                 "Age":36,
-                "Married":true
-                //"Classes":["Algorithms":2420, "Javascript":2470]
+                "Married":true,
+                "Classes":[2420, 2470],
+                "Hobbies":{
+                    "Exercise":"Lifting Weights",
+                    "Astronomy":"Telescope-ing",
+                    "VideoGames":"World of Warcraft"
+                }
             }
             
           document.getElementById("demo").innerHTML =
                    "Name: " + meObject.Name + "<br>" +
                    "Age: " + meObject.Age + "<br>" +
-                   "Married: " + meObject.Married + "<br>";
+                   "Married: " + meObject.Married + "<br>"+
+                   "My Classes:&nbsp" + meObject.Classes[0] + "&nbsp"+ 
+                        meObject.Classes[1] + "<br>" +
+                   "My Hobbies:&nbsp"+ meObject.Hobbies.Exercise + "&nbsp"+ 
+                        meObject.Hobbies.Astronomy + "&nbsp"+ meObject.Hobbies.VideoGames;
                    
         </script>
     </body>
