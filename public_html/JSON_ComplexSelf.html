@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<!--
+This will make an object with these data objects in it
+Name(string)
+Age(int)
+Married(boolean)
+Classes(Array of class numbers)
+Hobbies(Objects with values "hobbyname": "short description")
+This web site will display all the information that will tell the user your name, 
+then age, if you are married, then you will list your favorite class, and one 
+hobby with a description.
+
+-->
+<html>
+    <head>
+        <title>JSON Complex Self</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+    </head>
+    <body>
+        <p id ="demo"></p>
+
+        <script>
+            var meObject = {
+                "Name":"Mike",
+                "Age":36,
+                "Married":true
+                //"Classes":["Algorithms":2420, "Javascript":2470]
+            }
+            
+          document.getElementById("demo").innerHTML =
+                   "Name: " + meObject.Name + "<br>" +
+                   "Age: " + meObject.Age + "<br>" +
+                   "Married: " + meObject.Married + "<br>";
+                   
+        </script>
+    </body>
+</html>
